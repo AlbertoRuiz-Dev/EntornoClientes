@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+</head>
+<body>
+    <h1>TIPO DE DATOS Variable</h1>
+
+<script>
+    let colorfavorito = "azul";
+    console.log(colorfavorito);
+    colorfavorito = "verde";
+    console.log(colorfavorito);
+
+    //Variable bien
+    let _variableBienHecha = "_variableBienHecha";
+    console.log(_variableBienHecha);
+    //Variable mal
+    let Variablemal = "Variablemal";
+    console.log(Variablemal);
+
+    //variable null
+    let nulo = null;
+    console.log(nulo);
+    //indefinida
+    let vacia;
+    console.log(vacia);
+
+    let variablefuera = 1;
+    function funcion1(){
+        let variableDentro = 5;
+        console.log(variableDentro+variablefuera);
+    }
+    funcion1();
+    //console.log(variablefuera+variableDentro);
+    //No permite continuar ya que variableDentro is not defined (Solo esta definida dentro de los {})
+
+    let a = 10;
+let b = 5;
+
+let suma = a + b;
+console.log("Suma:", suma);
+
+let resta = a - b;
+console.log("Resta:", resta);
+
+let multiplicacion = a * b;
+console.log("Multiplicación:", multiplicacion);
+
+let division = a / b;
+console.log("División:", division);
+
+let modulo = a % b;
+console.log("Módulo:", modulo);
+
+a++;
+console.log("Incremento de a:", a);
+
+b--;
+console.log("Decremento de b:", b);
+
+
+let texto = "Línea 1\n\tLínea 2\n\t\tLínea 3";
+console.log(texto);
+
+</script>
+<img src="image.png" alt="">
+</body>
+</html>

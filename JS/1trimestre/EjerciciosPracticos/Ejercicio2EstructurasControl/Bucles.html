@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicio 2 Estructuras de Control</h1>
+    <script>
+        for (let i=0; 5>i; i++){
+            console.log(i)
+        }
+        console.log("------BUCLE FOR--------")
+        let contador = 0;
+        while (contador<5){
+            console.log(contador)
+            contador++;
+        }
+        console.log("------WHILE--------")
+        let x = 0;
+        do{
+            console.log(x)
+            x++;
+        }while(x<5)
+        console.log("------DO WHILE--------")
+
+        for (let i=0; 5>i; i++){
+            console.log(i)
+            if (i==3){
+                break;
+            }
+        }
+        console.log("------uso de break--------")
+        for (let i=0; 5>i; i++){
+            if (i==2){
+                continue;
+            }
+            console.log(i)
+            
+        }
+        console.log("------uso de continue--------")
+    </script>
+</body>
+</html>

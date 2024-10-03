@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicio 2 Estructuras de Control</h1>
+    <script>
+        let num = -2
+        if (num>0){
+            console.log("Es positivo y su valor es " + num )
+        }else if (num<0){
+            console.log("Es negativo y su valor es "+ num)
+        }else{
+            console.log("Es 0")
+        }
+
+        let edad = 23
+        if (edad>=18 && edad<=65){
+            console.log("Eres mayor de edad felicidades por tus " + edad + " años" )
+        }else if (edad<18){
+            console.log("eres menor y tienes  "+ edad + " años" )
+        }else{
+            console.log("Eres anciano")
+        }
+
+        let ans = prompt("Ingrese un número del 1 al 12:");
+        ans = parseInt(ans);
+    switch (ans) {
+        case 1:
+            console.log("Enero");
+            break;
+        case 2:
+            console.log("Febrero");
+            break;
+        case 3:
+            console.log("Marzo");
+            break;
+        case 4:
+            console.log("Abril");
+            break;
+        case 5:
+            console.log("Mayo");
+            break;
+        case 6:
+            console.log("Junio");
+            break;
+        case 7:
+            console.log("Julio");
+            break;
+        case 8:
+            console.log("Agosto");
+            break;
+        case 9:
+            console.log("Septiembre");
+            break;
+        case 10:
+            console.log("Octubre");
+            break;
+        case 11:
+            console.log("Noviembre");
+            break;
+        case 12:
+            console.log("Diciembre");
+            break;
+        default:
+            console.log("Número no válido. Debe ser del 1 al 12.");
+            break;
+}
+
+    </script>
+
+     
+</body>
+</html>

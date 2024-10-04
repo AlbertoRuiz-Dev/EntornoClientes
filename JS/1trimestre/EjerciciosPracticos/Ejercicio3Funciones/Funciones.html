@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+</head>
+<body>
+    <h1>Funciones JS/h1>
+
+<script>
+    let radio = prompt("Ingresa el radio de un circulo");
+    radio = parseFloat (radio);
+
+    function calculaPerimetro(){
+        let perimetro = 2 * 3.14 * radio;
+        document.getElementById("funcionperimetro").innerHTML = "El perimetro es: " + perimetro;
+    }
+
+    function calculatePower(base, exponente){
+        for (let i = 1;i<exponente;i++){
+            base *=base;
+        }
+        return base;
+    }
+    function calculaArea(){
+        let area =3.14*(calculatePower(radio,2)) ;
+        document.getElementById("funcionarea").innerHTML = "El area es: " + area;
+    }
+</script>
+<button type="button" onclick="calculaPerimetro()">Calcula perimetro</button>
+<button type="button" onclick="calculaArea()">Calcula Area</button>
+
+<p id="funcionperimetro"></p>
+<p id="funcionarea"></p>
+
+</body>
+</html>

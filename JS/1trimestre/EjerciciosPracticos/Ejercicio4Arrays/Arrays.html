@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+</head>
+<body>
+    <h1>ARRAYS</h1>
+
+    <script>
+        let cantidad = prompt("¿Cuántos números quieres introducir?");
+        cantidad = parseInt(cantidad);
+    
+        const array1 = [];
+        for (let i = 0; i < cantidad; i++) {
+            array1[i] = prompt("Introduce el número " + (i + 1));
+            array1[i] = parseInt(array1[i]);
+        }
+    
+        function findLargestNumber(array) {
+            let max = array[0];  
+            for (let i = 1; i < array.length; i++) {  // Empezamos en 1 porque ya usamos el primer número
+                if (array[i] > max) {
+                    max = array[i];
+                }
+            }
+            return max;  
+        }
+    
+        const numeroMayor = findLargestNumber(array1);
+        console.log("El número más grande es: " + numeroMayor);
+        alert("El número más grande es: " + numeroMayor);
+    </script>
+    
+
+</body>
+</html>

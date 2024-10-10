@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        function calcularPrimos(numero1, numero2) {
+            let primos = [];
+            for(let i = numero1; i<=numero2;i++){
+                let numDivisibles = 0;
+                for (let j =1; j<=i;j++){
+                    if (i%j==0){
+                        numDivisibles++;
+                    }
+                }
+                    if(numDivisibles===2){
+                        primos.push(i)
+                }
+            
+            }
+            alert(primos)
+    }
+    let num1 = parseInt(prompt("numero 1"))
+    let num2 = parseInt(prompt("numero 2"))
+
+    calcularPrimos(num1,num2);
+    </script>
+    </body>
+</html>
+
+    
+

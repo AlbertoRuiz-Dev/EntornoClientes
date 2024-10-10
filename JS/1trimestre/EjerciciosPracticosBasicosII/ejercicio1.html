@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function funcion1(){
+       let gastosAlo = parseFloat(prompt("Introduce los gastos de alojamiento"));
+       let gastosAlimentacion = parseFloat(prompt("Introduce los gastos de alimentacion"));
+       let gastosEntrenamiento = parseFloat(prompt("Introduce los gastos de entrenamiento"));
+       let total = parseFloat(gastosAlimentacion+gastosAlo+gastosEntrenamiento);
+
+       let str= "los gastos de alojamiento:" + gastosAlo + "\nlos gastos de alimentacion: "+ gastosAlimentacion+"\nLos gastos de entrenamiento: "+gastosEntrenamiento;
+        console.log(str + " total ; "+ total.toFixed(2));
+
+        return str;
+        }
+</script>
+<script>funcion1();</script>
+</body>
+
+</html>

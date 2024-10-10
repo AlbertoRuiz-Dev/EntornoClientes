@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcularPrecioFinal(precioOriginal, descuento) {
+        let descuentoAplicado = (precioOriginal * descuento) / 100;
+        let precioFinal = precioOriginal - descuentoAplicado;
+        return precioFinal.toFixed(2); 
+    }
+
+        let precioOriginal = parseFloat(prompt("Inserta el precio original del producto:"));
+
+        let porcentajeDescuento = parseFloat(prompt("Inserta el porcentaje de descuento a aplicar:"));
+
+        let precioFinal = calcularPrecioFinal(precioOriginal, porcentajeDescuento);
+
+        alert(`El precio final del producto después de aplicar un descuento del ${porcentajeDescuento}% es: ${precioFinal} euros.`);
+
+    </script>
+</body>
+</html>

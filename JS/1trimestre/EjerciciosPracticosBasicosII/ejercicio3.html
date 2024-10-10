@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="escribir"></p>
+    <script>
+        function calculadora_IMC(){
+            let altura = parseFloat(prompt("Dame la altura en Metros"));
+            let peso = parseFloat(prompt("Dame el peso en KG"));
+            let imc = peso / (Math.pow(altura, 2)); // Corrección de la fórmula
+            let str = "IMC : " + imc;
+            let clasificacion;
+            if (imc < 18.5){
+                clasificacion = "Baja";
+            } else if (imc > 30) {
+                clasificacion = "Obesidad";
+            } else if (imc > 25) {
+                clasificacion = "Sobrepeso";
+            } else {
+                clasificacion = "Normal";
+            }
+
+            document.getElementById("escribir").innerHTML = str + " Clasificacion: " + clasificacion; // Corrección de innerHTML
+        }
+
+        calculadora_IMC(); // Colocar la llamada después de que el DOM esté cargado
+    </script>
+</body>
+</html>

@@ -14,4 +14,4 @@ for (let l in fruits) {
 function fun(nombre) {
   console.log("Hola " + nombre);
 }
-
+document.getElementById("demo").innerHTML = " HOLA"

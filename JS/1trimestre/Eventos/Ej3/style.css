@@ -63,12 +63,12 @@ body {
     color: #999;
     }
     .completeBtn, .deleteBtn {
-    background-color: black;
-    size: 4px;
+    background-color: transparent;
     border: none;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 10em;
+    width: 25px;
+    height: 25px;
     }
     .completeBtn:hover, .deleteBtn:hover {
     color: #FF5722;

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>
+        Cifrado Cesar
+    </h1>
+    <h2>
+        -Descifrar-
+    </h2>
+    <form>
+        <label for="idiomas">Alfabeto</label>
+        <select name="idiomas" id="idiomas">
+            <option value="castellano">Castellano</option>
+            <option value="ingles">English</option>
+        </select>
+        <br>
+        <label for="texto">Texto a descifrar</label>
+        <textarea name="texto" id="texto"></textarea>
+        <br>
+        <label for="ROT">Nivel de rotado</label>
+        <input type="number" name="ROT" id="ROT" style="width:50px;">
+        <br>
+        <button type="submit">Descifrar</button>
+    </form>
+    <p><span id=resultado style="color: red;"></span></p>
+</body>
+
+</html>
